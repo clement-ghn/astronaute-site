@@ -2,8 +2,6 @@
 
 ## Description 🚀
 
-Bienvenue sur **Astronautes dans l'Espace**, un site web interactif où tu peux explorer des astronautes célèbres, leurs missions et leurs découvertes dans l'univers. Ce site utilise **Svelte** pour offrir une expérience rapide et fluide.
-
 Le site permet de :
 
 - Afficher une liste d'astronautes avec leurs biographies et missions.
