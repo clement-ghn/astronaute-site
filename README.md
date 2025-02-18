@@ -1,107 +1,46 @@
-# This repo is no longer maintained. Consider using `npm init vite` and selecting the `svelte` option or — if you want a full-fledged app framework — use [SvelteKit](https://kit.svelte.dev), the official application framework for Svelte.
+# Astronautes dans l'Espace 🌌
 
----
+## Description 🚀
 
-# svelte app
+Bienvenue sur **Astronautes dans l'Espace**, un site web interactif où tu peux explorer des astronautes célèbres, leurs missions et leurs découvertes dans l'univers. Ce site utilise **Svelte** pour offrir une expérience rapide et fluide.
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+Le site permet de :
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+- Afficher une liste d'astronautes avec leurs biographies et missions.
+- Visualiser une carte interactive des missions dans l'espace à l'aide de **Leaflet**.
+- Découvrir des faits intéressants sur les missions spatiales passées et actuelles.
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+## Fonctionnalités ⚡
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+- Recherche filtrée par pays, missions, ou années.
+- Carte interactive des missions spatiales.
+- Profil des astronautes avec leurs réalisations et découvertes.
 
+## Technologies utilisées 🛠️
 
-## Get started
+- **Svelte** : Un framework JavaScript pour des applications rapides et réactives.
+- **Leaflet** : Une bibliothèque de cartes pour afficher une carte interactive des missions spatiales.
+- **Node.js & npm** : Pour la gestion des dépendances et l'exécution du projet.
 
-Install the dependencies...
+## Installation 💻
 
-```bash
-cd svelte-app
-npm install
-```
+### Prérequis
 
-...then start [Rollup](https://rollupjs.org):
+- Node.js (version 16 ou supérieure)
+- npm (ou Yarn) pour gérer les dépendances
 
-```bash
-npm run dev
-```
+### Étapes d'installation
 
-Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+1. Clone ce dépôt sur ta machine locale :
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+   ```bash
+   git clone https://github.com/ton-utilisateur/astronautes-dans-lespace.git
 
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
-
-## Building and running in production mode
-
-To create an optimised version of the app:
-
-```bash
-npm run build
-```
-
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
+2. Accede au dossier, lance les dépendances et le serveur
+  ```bash
+   cd astronautes-site
+   npm install
+   npm run dev
 
 
-## Single-page app mode
 
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-## Using TypeScript
-
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
-
-```bash
-node scripts/setupTypeScript.js
-```
-
-Or remove the script via:
-
-```bash
-rm scripts/setupTypeScript.js
-```
-
-If you want to use `baseUrl` or `path` aliases within your `tsconfig`, you need to set up `@rollup/plugin-alias` to tell Rollup to resolve the aliases. For more info, see [this StackOverflow question](https://stackoverflow.com/questions/63427935/setup-tsconfig-path-in-svelte).
-
-## Deploying to the web
-
-### With [Vercel](https://vercel.com)
-
-Install `vercel` if you haven't already:
-
-```bash
-npm install -g vercel
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-vercel deploy --name my-project
-```
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
